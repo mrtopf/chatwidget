@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{title}}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+    
+        <!--[if lt IE 9]>                                                                                                                                                                
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <link type="text/css" href="{{url_for("static", filename="css/chat.css")}}" rel="stylesheet" />
+    </head>
+
+    <body>
+
+        <div id="chatwidget">
+            <ul class="chatwidget-chat">
+                <li>
+                    <span class="chatwidget-date">12:13</span>
+                    <span style="color: #fa0;" class="chatwidget-user chatwidget-user-mrtopf" >mrtopf</span>
+                    <span class="chatwidget-msg">: Hello, everybody!</span>
+                </li>
+                <li>
+                    <span class="chatwidget-date">12:14</span>
+                    <span style="color: #0af;" class="chatwidget-user chatwidget-user-somebody" >somebody</span>
+                    <span class="chatwidget-msg">: Hi!</span>
+                </li>
+                <li>
+                    <span class="chatwidget-date">12:18</span>
+                    <span style="color: #fa0;" class="chatwidget-user chatwidget-user-mrtopf" >mrtopf</span>
+                    <span class="chatwidget-msg">: Schau doch mal hier, das sieht ganz cool aus!</span>
+                </li>
+            </ul>
+            <form class="chatwidget-input" method="POST">
+                <input type="text" name="c">
+                <input type="submit" value="Chat">
+            </form>
+        </div>
+    </body>
+</html>
